@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="card">
+        <header class="card__header header">
+          <label class="header__selection toggle">
+            <input js-toggle class="toggle__input" aria-label="toggle dark mode" type="checkbox">
+            <span class="toggle__fake"></span>
+            <h1 class="toggle__text">Dark Mode</h1>
+          </label>
+        </header>
+        <section class="card__body body">
+          <p class="body__text">The <code>prefers-color-scheme</code> CSS 5 Media Query is used to detect if the user has requested the system to use a light or dark color theme. This Pen demonstrates how to use a theme toggle for both legacy and progressive code. Check <a target="_blank" rel="noopener" href="//caniuse.com/#feat=prefers-color-scheme" aria-label="Can I Use Website">Caniuse</a> for support.</p>
+          <p class="body__text">If the theme is overwriten by the toggle, it will be persisted via local storage; else the media query will keep that setting. Press the following button to clear that storage.</p>
+        </section>
+        <section class="card__body card__body--right body">
+          <button type="button" js-clearStorage>Clear Local Storage</button>
+        </section>
+      </main>
+</body>
+
+</html>
